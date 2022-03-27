@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Admin Dashboard</title>
+        <link
+            href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="/assets/css/style.css" />
+    </head>
+
+    <body>
+        <main id="root">
+            <aside id="sidebar" class="sidebar">
+                <div class="game-name">
+                    <span>GAME NAME</span>
+                </div>
+
+                <div class="info-container">
+                    <div class="user-info">
+                        <div class="user-id">ID0123456789</div>
+                        <div class="user-role">Server Admin</div>
+                    </div>
+
+                    <div class="balance-info">
+                        <span class="bal">Bal.</span>
+                        <span class="val">1,23,45,600.00</span>
+                    </div>
+                </div>
+
+                <li class="dashboard_link nav-item selected">
+                    <a href=""
+                        ><i class="bx bxs-dashboard"></i
+                        ><span>Dashboard</span></a
+                    >
+                </li>
+
+                <ul class="nav-items" id="nav_items"></ul>
+            </aside>
+
+            <div id="mainContainer" class="main">
+                <header>
+                    <span class="hamburgerIcon" id="toggle-sidebar">
+                        <i class="bx bx-menu"></i>
+                    </span>
+
+                    <div class="actions" id="action-bar">
+                        <span class="action-icons" id="notificationButton">
+                            <i class="fas fa-bell"></i>
+                            <span class="unread-badge">1</span>
+                        </span>
+
+                        <span
+                            class="action-icons chat-icon"
+                            id="toggleContactList"
+                        >
+                            <i class="fas fa-comments"></i>
+                            <span class="unread-badge">1</span>
+                        </span>
+
+                        <span class="action-icons">
+                            <i class="fas fa-user"></i>
+                        </span>
+
+                        <span class="action-icons">
+                            <i class="fas fa-sign-out-alt"></i>
+                        </span>
+                    </div>
+                </header>
+
+                <div class="Container" id="Container">
+                    <div class="dashboard" id="dashboard">
+                        <h1>DashBoard</h1>
+
+                        <div class="chatbox" id="chatbox">
+                            <div class="header">
+                                <div class="name">Person 1</div>
+
+                                <div class="chat_actions">
+                                    <span class="minimize">_</span>
+                                    <span class="close">x</span>
+                                </div>
+                            </div>
+
+                            <div class="messages">
+                                <div class="message">
+                                    <span>hi</span>
+                                </div>
+                                <div class="message sendByMe">
+                                    <span>hi</span>
+                                </div>
+                                <div class="message">
+                                    <span>hi</span>
+                                </div>
+                                <div class="message sendByMe">
+                                    <span>hi</span>
+                                </div>
+                                <div class="message">
+                                    <span>hi</span>
+                                </div>
+                                <div class="message sendByMe">
+                                    <span>hi</span>
+                                </div>
+                                <div class="message">
+                                    <span>hi</span>
+                                </div>
+                                <div class="message sendByMe">
+                                    <span>hi</span>
+                                </div>
+                                <div class="message">
+                                    <span>hi</span>
+                                </div>
+                                <div class="message sendByMe">
+                                    <span>hi</span>
+                                </div>
+                                <div class="message">
+                                    <span>hi</span>
+                                </div>
+                                <div class="message sendByMe">
+                                    <span>hi</span>
+                                </div>
+                            </div>
+
+                            <div class="input_area">
+                                <form>
+                                    <input
+                                        type="text"
+                                        class="messageBox"
+                                        placeholder="Write message here"
+                                    />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="notificationBar" id="notificationBar">
+                        <div class="notification_header">Notifications</div>
+
+                        <div class="notification">
+                            <span class="content"
+                                >Your account has been credited with $5000.
+                            </span>
+
+                            <span class="icon">
+                                <i class="bx bx-x"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="contactlist showContactList" id="contactList">
+                        <div class="contactList_header">Contacts</div>
+
+                        <div class="contacts" id="chat1">
+                            <span class="status offline"></span>
+                            <span class="name">Person 1</span>
+                            <span class="unread-badge">2</span>
+                        </div>
+                        <div class="contacts" id="chat1">
+                            <span class="status online"></span>
+                            <span class="name">Person 2</span>
+                            <span class="unread-badge">5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script type="module" src="/assets/js/script.js"></script>
+        <script type="module" src="/assets/js/navlink.js"></script>
+    </body>
+</html>

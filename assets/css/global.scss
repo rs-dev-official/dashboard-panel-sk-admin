@@ -1,0 +1,39 @@
+$primary-color: #1caf9a;
+$sidebar-dark-bg: #191c22;
+$pitch-dark: #080a0e;
+$text-color: #ffffff;
+$fade-text-color: #999999;
+$nav-link-color: #8b91a0;
+$nav-link-hover-bg: #282c35;
+$nav-link-bottom-line: #080a0e8a;
+$nav-icon-margin: 0px 0px 0px 10px;
+$sub-menu-dark-bg: #14161b;
+$sub-menu-link-color: #b9bdc7;
+$sub-menu-hover-bg: #0e0f13;
+$sub-menu-active-bg: #08090a;
+$transition-animation: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+#root {
+    overflow-x: hidden;
+}
